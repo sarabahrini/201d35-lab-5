@@ -46,17 +46,15 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
-function sumAndMultiply(a, b, c,) { 
+function sumAndMultiply(a, b, c,){ 
     var firstSum= sum (a,b);
     var secondSum= sum(firstSum[0],c);
     var firstMulti=multiply(a,b);
     var secondMulti=multiply(firstMulti[0],c);
-    var messageSum='The sum of '+a +' and '+b +'and '+'is '+secondSum;
-    console.log(messageSum);
-    var messageMulti='The product of '+a +' and '+b +'and '+'is '+secondMulti;
+    var messageSum=a+' and '+b+' and '+c+' sum to '+ secondSum[0]+'.';
+    var messageMulti='The product of '+a+' and '+b+' and '+c+' is '+ secondMulti[0] +'.';
     return [secondSum[0],secondMulti[0],messageSum,messageMulti];
 }
-
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4,7,5);
 
